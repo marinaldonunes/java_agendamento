@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
-            
+                
+    
     
     <wb-module deploy-name="AGD">
-        <wb-resource deploy-path="/" source-path="/src"/>
+                
         <wb-resource deploy-path="/" source-path="/conf"/>
-                        
+        <wb-resource deploy-path="/" source-path="/br.com.agd"/>
+                                
+        
         
         <property name="java-output-path" value="/AGD/build/classes"/>
-                    
+                            
+    
     
     </wb-module>
-        
+            
+
 
 </project-modules>

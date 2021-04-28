@@ -5,16 +5,20 @@
 <hibernate-configuration>
     <session-factory name="sessaoAgd">
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.password">fff</property>
-        <property name="hibernate.connection.url">jdbc:postgresql:&lt;name&gt;</property>
-        <property name="hibernate.connection.username">rrr</property>
+        <property name="hibernate.connection.password">agd00</property>
+        <property name="hibernate.connection.url">jdbc:postgresql//localhost:5432//agd</property>
+        <property name="hibernate.connection.username">agd</property>
         <property name="hibernate.default_schema">agd</property>
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
 		<property name="hibernate.show_sql">true</property>
 		<property name="hibernate.format_sql">false</property>
-		<property name="hbm2ddl.auto">update</property>   
-		
-		
-		     
+				
+		<mapping class="br.com.agd.entidade.Pessoa" />
+		<mapping class="br.com.agd.entidade.Profissional" />
+		<mapping class="br.com.agd.entidade.Agendamento" />
+		<mapping class="br.com.agd.entidade.Servico" />
+		<mapping class="br.com.agd.entidade.Contato" />
+		<mapping class="br.com.agd.entidade.AgendaItem" />										
+												     
     </session-factory>
 </hibernate-configuration>
